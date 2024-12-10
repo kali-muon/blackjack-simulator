@@ -2,9 +2,14 @@ using System.Runtime.CompilerServices;
 
 namespace blackjack;
 
-class Collection
+public class Collection
 {
-    List<Card> cards;
+    protected List<Card> cards;
+
+    public Collection()
+    {
+        this.cards = new List<Card>();
+    }
 
     public Collection(List<Card> cards)
     {
